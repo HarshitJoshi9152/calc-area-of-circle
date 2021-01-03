@@ -1,0 +1,17 @@
+{
+  "name": "calculus-area-of-circle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "area.js",
+  "dependencies": {
+    "bignumber.js": "^9.0.1",
+    "esm": "^3.2.25"
+  },
+  "devDependencies": {},
+  "scripts": {
+	  "start":"node -r esm area.js"
+  },
+  "keywords": [],
+  "author": "Harshit Joshi",
+  "license": "MIT"
+}

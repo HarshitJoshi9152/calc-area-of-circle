@@ -1,3 +1,4 @@
+import { BigNumber } from "bignumber.js";
 const log = console.log;
 
 class Circle{
@@ -15,14 +16,14 @@ let correct_area = c.area();
 
 
 let rings = []; // concentric circles;
-let dr = 0.1n;// diff btw radiuses of rings;
+let dr = BigNumber(0.1);// diff btw radiuses of rings;
 
 // populating the rings array;
-let lastRadius = 0n;
+let lastRadius = BigNumber(0);
 while(lastRadius <= c.r) {
-	lastRadius += dr;
+	lastRadius = lastRadius.plus(dr);
 	rings.push(new Circle(lastRadius));
-	log(lastRadius)
+	log(lastRadius + "")
 }
 
 log(rings.length)
